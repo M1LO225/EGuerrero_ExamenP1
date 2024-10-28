@@ -57,7 +57,7 @@ namespace EGuerrero_ExamenP1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdE,Nombre,Apellido,TieneExperiencia,FechaNacimiento,Salario,Modelo")] GuerreroEmilio guerreroEmilio)
+        public async Task<IActionResult> Create([Bind("IdE,Nombre,Apellido,TieneExperiencia,FechaNacimiento,Salario,Id")] GuerreroEmilio guerreroEmilio)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace EGuerrero_ExamenP1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdE,Nombre,Apellido,TieneExperiencia,FechaNacimiento,Salario,Modelo")] GuerreroEmilio guerreroEmilio)
+        public async Task<IActionResult> Edit(int id, [Bind("IdE,Nombre,Apellido,TieneExperiencia,FechaNacimiento,Salario,Id")] GuerreroEmilio guerreroEmilio)
         {
             if (id != guerreroEmilio.IdE)
             {

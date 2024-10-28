@@ -8,7 +8,6 @@ namespace EGuerrero_ExamenP1.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        [NotNull]
         [StringLength(50)]
         public string Modelo { get; set; }
         [Required]
